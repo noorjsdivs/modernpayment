@@ -6,7 +6,7 @@ import { navLinks } from "../constants";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="w-full flex py-6 px-4 justify-between items-center navbar">
+    <nav className="w-full flex py-6 px-4 justify-between items-center navbar border-b-[1px] border-cyan-900">
       <img src={Logo} className="w-64 h-full" alt="Logo" />
       <ul className="list-none sm:flex hidden justify-end items-center flex-1s">
         {navLinks.map((nav, index) => (
@@ -36,7 +36,7 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins text-white font-normal cursor-pointer text-[16px] mb-4 hover:text-cyan-400 hover:border-b border-cyan-400 duration-300 w-full text-center`}
+                className={`font-poppins text-white font-normal cursor-pointer text-[16px] mb-4 hover:text-cyan-400 hover:border-b-[1px] border-cyan-400 duration-300 w-full text-center`}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
