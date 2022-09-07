@@ -14,7 +14,7 @@ import {
 } from "./components";
 
 const App = () => (
-  <div className="w-full h-auto bg-primary">
+  <div className="w-full h-auto flex items-center justify-center bg-primary">
     <div className="bg-primary max-w-screen-xl mx-auto overflow-hidden">
       <div className={`${styles.paddingX}${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
